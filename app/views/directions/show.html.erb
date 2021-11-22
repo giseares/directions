@@ -1,2 +1,14 @@
-<h1>Index#show</h1>
-<p>Find me in app/views/index/show.html.erb</p>
+<div class="container">
+  <h1><%= @direction.street %> <small><%= @direction.city %></small></h1>
+    <%= @direction.outside_number %>
+    <%= @direction.inside_number %>
+    <%= @direction.cp %>
+    <%= @direction.colonia %>
+    <%= @direction.delegation %>
+    <%= @direction.city %>
+    <%= @direction.state %>
+    <%= @direction.country %>
+  
+  <%=link_to "Back", directions_path %>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Directions</h1>
+
+    <ul>
+      <% @directions.each do |direction| %>
+        <li><%= link_to direction.street, direction_path(direction) %></li>
+
+       <% end %>
+    </ul>
+
+
+</div>
